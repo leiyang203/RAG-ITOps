@@ -1,0 +1,44 @@
+# Secrets and local config
+.env
+**/.env
+*.pem
+
+# Python
+__pycache__/
+*.py[cod]
+*.class
+*.egg-info/
+.eggs/
+.venv/
+venv/
+env/
+.Python
+
+# Vector store and generated knowledge files
+knowledge/chroma_kb1/
+knowledge/data/crawl/*
+!knowledge/data/crawl/.gitkeep
+knowledge/data/tmp/*
+!knowledge/data/tmp/.gitkeep
+*.sqlite3
+
+# Node / frontend
+node_modules/
+dist/
+dist-ssr/
+*.local
+
+# IDE / OS
+.idea/
+.vscode/
+*.iml
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Logs
+*.log
+logs/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
